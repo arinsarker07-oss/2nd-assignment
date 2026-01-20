@@ -27,6 +27,9 @@
     align-items: center;
     padding: 24px 200px;
 }
+.nav-container img{
+  display: none;
+}
 .nav-content{
   display: flex;
   gap: 32px;
@@ -54,4 +57,152 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+
+/* --- Hero Section Main Style --- */
+.hero-section {
+    position: relative;
+    background-color: #1A0B2E;
+    padding: 100px 500px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.hero-bg-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1; 
+    opacity: 0.7;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2; 
+    max-width: 550px;
+    margin: 0 auto; 
+}
+
+.hero-image {
+    position: relative;
+    width:  350px;
+    height: 350px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-circle-img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.mic-content {
+    position: relative;
+    z-index: 2;
+}
+
+.mic-icon {
+    width: 200px;
+    height: 200px;
+    padding: 10px 40px;
+}
+
+.badge-new {
+    position: absolute;
+    top: -52px;
+    right: -52px;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 8px 16px;
+    border-radius: 10000px;
+    box-shadow: 0 3px 20px 0px #00FF88;
+}
+
+.hero-title {
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.hero-text {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+
+.hero-action-btns {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-spotify {
+    background: linear-gradient(16deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%); 
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-subscribe-outline {
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 20px 24px; 
+    }   
+    .nav-content, .nav-button, .btn-primary{
+        display: none; 
+    }
+    .nav-container img{
+     display: flex;
+}
+
+  .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-action-btns {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .btn-spotify, .btn-subscribe-outline {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
 }
