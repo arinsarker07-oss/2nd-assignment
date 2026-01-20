@@ -232,6 +232,72 @@
     color: #FFFFFF;
 }
 
+.features-section{
+   background-color: #230E3D;
+    padding: 120px 200px;
+    color: #FFFFFF;
+
+}
+
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
+.features-grid >div {
+   background-color: rgba(53, 17, 101, 0.4) ;
+   padding: 40px;
+   border-radius: 40px;
+   /* opacity: 40%; */
+}
+.features-grid h3{
+font-weight: bold;
+font-size: 1.5rem;
+margin-bottom: 16px;
+}
+
+.features-grid p{
+   opacity: 60%;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+
+.feature-card-first{
+    grid-area: first;
+}
+.feature-card-second{
+    grid-area: second;
+}
+.feature-card-third{
+    grid-area: third;
+}
+.feature-card-fourth{
+    grid-area: fourth;
+}
+.feature-card-fifth{
+    grid-area: fifth;
+}
+
+.features-grid{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-areas: 
+       "first  second  second" 
+       "first  third   third" 
+       "fourth fourth  fifth";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 
 
 
@@ -252,32 +318,25 @@
   .hero-title {
         font-size: 2.5rem;
     }
-
 .hero-image {
         width: 200px; 
         height: 200px;
     }
-
     .mic-icon {
         width: 80px; 
         height: 80px;
         padding: 0;
     }
-
-
     .hero-action-btns {
         flex-direction: column; 
         align-items: center;
     }
-
     .btn-spotify, .btn-subscribe-outline {
         width: 100%;
         max-width: 200px;
         justify-content: center;
     }
-
-    /* about-section */
-     
+    /* about-section */   
     .about-container {
       max-width: 400px;
       width: 100%;
@@ -288,5 +347,5 @@
     }
     .about-title{
       padding-top: none;
-    }
+    }  
 }
