@@ -131,16 +131,16 @@
 
 .hero-title {
     font-size: 3.75rem;
-    font-weight: 800;
+    font-weight: bold;
     margin-bottom: 8px;
     color: white;
 }
 
-.hero-text {
+.hero-text p {
     color: #FFFFFF;
     font-size: 1rem;
     margin-bottom: 24px;
-    opacity: 80%;
+    opacity: 70%;
 }
 
 .hero-action-btns {
@@ -610,4 +610,41 @@ img{
         font-size: 16px;
         justify-content: center;
     }
+}
+
+
+@keyframes rotateAndPulse {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.05); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.hero-circle-img {
+    animation: rotateAndPulse 3s linear infinite;
+}
+
+
+.btn-primary:hover {
+    background-color: #ff0015; 
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 20px rgba(183, 0, 255, 0.3); 
+}
+.btn-spotify:hover {
+    background-color: #d71e1e;
+    color: white;
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(56, 82, 177, 0.975);
+}
+.btn-subscribe-outline:hover {
+    background-color: rgba(255, 255, 255, 0.863);
+    color: rgb(55, 128, 9); 
+    border-color: rgba(31, 129, 13, 0.858);
+    transform: translateY(-3px);
+}
+.social-icon a img:hover {
+    transform: scale(1.2) rotate(5deg);
+    filter: brightness(1.2);
+}
+button:active {
+    transform: translateY(1px);
 }
