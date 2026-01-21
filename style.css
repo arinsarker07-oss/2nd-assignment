@@ -297,7 +297,48 @@ margin-bottom: 16px;
     margin: 0 auto;
 }
 
+/* featured-episodes */
 
+.featured-container h3{
+   font-size: 3rem;
+   font-weight: bold;
+   padding-top: 120px;
+   text-align: center;
+}
+.featured-episodes{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1200px;
+}
+.featured-episodes>div{
+    background-color: rgba(53, 17, 101, 0.4);
+    max-width: 380px;
+    border-radius: 20px;
+    margin-bottom: 120px;
+}
+.featured-container{
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+}
+.featured-episodes img{
+    max-width: 380px;
+}
+.featured-episodes h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px 24px;
+}
+.featured-episodes p{
+   font-size:1rem ;
+   opacity: 60%;
+   padding: 0 24px;
+}
+#clock{
+    padding: 12px 24px 24px 24px;
+}
 
 
 
@@ -374,5 +415,23 @@ margin-bottom: 16px;
 .features-grid>div{
     padding: 20px 24px ;
     text-align: center;
+}
+
+/* .featured-episodes */
+.featured-episodes{
+  grid-template-columns: 1fr;
+}
+
+.featured-container h3{
+   font-size: 2rem;
+   font-weight: bold;
+   padding-top: 40px;
+   text-align: center;
+}
+
+.featured-episodes>div{
+    margin-bottom: 16px;
+    width: 100%;
+    border: 1px solid red;
 }
 }
