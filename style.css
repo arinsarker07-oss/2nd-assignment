@@ -348,7 +348,50 @@ img{
     padding: 12px 24px 24px 24px;
 }
 
+/* host-section */
 
+.host-section {
+    /* padding: 50px 20px; */
+    background-color: #1A0B2E; 
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.host-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.host-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+.image-contianer img {
+    width: 300px;
+    height: 150px;
+}
+.host-name{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.host-bio{
+    opacity: 60%;
+}
+.social-icon {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
 
 @media (max-width: 576px) {
    body{
@@ -450,5 +493,31 @@ img{
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+}
+
+.host-card{
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    width: 470px;
+    height: 550px;
+}
+.content-container {
+        text-align: center;
+    }
+
+    .social-icon {
+        justify-content: center;
+        gap: 20px;
+    }
+    .image-contianer img {
+    width: 150px;
+    height: 150px;
+}
+  .host-name{
+    font-size: 1.5rem;
+}
+.host-bio{
+    line-height: 24px;
 }
 }
