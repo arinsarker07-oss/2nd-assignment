@@ -302,8 +302,14 @@ margin-bottom: 16px;
 
 
 @media (max-width: 576px) {
+   body{
+      overflow-x: hidden;
+      width: 100%;
+   }
     .nav-container {
-        padding: 20px 24px; 
+        padding: 20px 16px;
+        max-width: 100vw; 
+        overflow-x: hidden;
     }   
     .nav-content, .nav-button, .btn-primary{
         display: none; 
@@ -348,4 +354,25 @@ margin-bottom: 16px;
     .about-title{
       padding-top: none;
     }  
+  .features-grid{
+      grid-template-columns: 1fr; 
+      width: 100%;
+      gap: 20px;
+       grid-template-areas: 
+       "first  "
+       "second" 
+       "third " 
+       "fourth "
+       "fifth";
+  }
+  .features-section{
+       padding: 24px 24px;
+  }
+  .section-title{
+    font-size: 2rem;
+  }
+.features-grid>div{
+    padding: 20px 24px ;
+    text-align: center;
+}
 }
