@@ -299,6 +299,20 @@ margin-bottom: 16px;
 
 /* featured-episodes */
 
+.featured-episodes a {
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.featured-episodes a img:hover {
+    transform: scale(1.05); 
+    transition: 0.3s;
+    opacity: 0.8; 
+}
+.clock span {
+    color: #00FF88;
+    }
 .featured-container h3{
    font-size: 3rem;
    font-weight: bold;
@@ -400,7 +414,7 @@ img{
     background-image: url(assets/footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 170% 100%;
+    background-size: 100% 100%;
     padding:120px ;
     color: white;
     text-align: center;
@@ -584,6 +598,7 @@ img{
 /* footer */
 .footer-section {
         padding: 40px 20px; 
+        background-size: 190% 100%;
     }
 .footer-link {
         display: grid;
