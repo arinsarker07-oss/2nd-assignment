@@ -395,6 +395,57 @@ img{
     margin-top: 16px;
 }
 
+/* footer section */
+.footer-section {
+    background-image: url(assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 170% 100%;
+    padding:120px ;
+    color: white;
+    text-align: center;
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+.footer-link a{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    opacity: 80%;
+    transition: 0.3s;
+}
+.footer-link a img {
+    width: 24px;
+    height: auto;
+}
+.footer-link a:hover{
+    color: rgb(202, 17, 17);
+}
+.copyright {
+    opacity: 60%;
+}
+#Te{
+    color: white;
+}
+#Wa{
+  background: linear-gradient(16deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lin{
+ font-size:3.75rem ;
+ font-weight: bold;
+ margin-bottom: 10px;
+}
+
 @media (max-width: 576px) {
    body{
       overflow-x: hidden;
@@ -415,20 +466,26 @@ img{
   .hero-section {
         padding: 40px 16px; 
     }
+   .hero-container {
+    margin-top: -50px;
+   }
   .hero-title {
+        padding-top: 24px;
         font-size: 2.5rem;
     }
 .hero-image {
         width: 200px; 
         height: 200px;
+        position: relative;
+        top: 60px;
     }
     .mic-icon {
-        width: 80px; 
+        width: 50px; 
         height: 80px;
         padding: 0;
     }
     .hero-action-btns {
-        flex-direction: column; 
+        flex-direction:row; 
         align-items: center;
     }
     .btn-spotify, .btn-subscribe-outline {
@@ -523,4 +580,19 @@ img{
 .host-bio{
     line-height: 24px;
 }
+
+/* footer */
+.footer-section {
+        padding: 40px 20px; 
+    }
+.footer-link {
+        display: grid;
+        grid-template-columns: repeat(2, auto); 
+        justify-content: center;
+        gap: 16px 16px; 
+    }
+    .footer-link a {
+        font-size: 16px;
+        justify-content: center;
+    }
 }
