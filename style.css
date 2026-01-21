@@ -344,8 +344,10 @@ img{
    opacity: 60%;
    padding: 0 24px;
 }
-#clock{
+.clock{
     padding: 12px 24px 24px 24px;
+    display: flex;
+    gap: 6px;
 }
 
 /* host-section */
@@ -498,9 +500,10 @@ img{
 .host-card{
     flex-direction: column;
     text-align: center;
+    max-width: 400px;
+    min-height: 480px;
     padding: 50px;
-    width: 470px;
-    height: 550px;
+    width: 100%;
 }
 .content-container {
         text-align: center;
